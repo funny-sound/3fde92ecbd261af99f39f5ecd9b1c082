@@ -1,179 +1,100 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>About Us — Đăng Khang Tech</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - Dang Khang Tech</title>
   <style>
-    :root{
-      --bg:#f7f9fb;
-      --card:#ffffff;
-      --accent:#0b63d6;
-      --muted:#6b7280;
-      --radius:12px;
-      --max:900px;
-      font-family: Inter, Roboto, "Helvetica Neue", Arial, sans-serif;
+    /* Reset & base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Helvetica Neue", Arial, sans-serif;
     }
-    html,body{height:100%}
-    body{
-      margin:0;
-      background:linear-gradient(180deg, #f2f6fb 0%, var(--bg) 100%);
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      padding:40px 20px;
-      color:#111827;
+
+    body {
+      background-color: #fafafa;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+      padding: 24px 16px;
     }
-    .container{
-      width:100%;
-      max-width:var(--max);
-      background:var(--card);
-      border-radius:var(--radius);
-      box-shadow:0 8px 30px rgba(11,99,214,0.08);
-      overflow:hidden;
+
+    .container {
+      max-width: 600px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      padding: 24px;
     }
-    .hero{
-      padding:28px 28px;
-      border-bottom:1px solid #eef2f7;
-      display:flex;
-      gap:18px;
-      align-items:center;
+
+    h1 {
+      font-size: 1.8rem;
+      text-align: center;
+      margin-bottom: 12px;
+      color: #1a1a1a;
     }
-    .logo{
-      width:74px;
-      height:74px;
-      border-radius:10px;
-      background:linear-gradient(135deg,#0b63d6,#4fb3ff);
-      color:white;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      font-weight:700;
-      font-size:20px;
-      box-shadow:0 6px 18px rgba(11,99,214,0.12);
+
+    .subtitle {
+      text-align: center;
+      color: #666;
+      margin-bottom: 20px;
+      font-weight: 500;
     }
-    .headings h1{
-      margin:0;
-      font-size:20px;
-      letter-spacing:-0.2px;
+
+    .info {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: #444;
+      margin-bottom: 20px;
     }
-    .headings p{
-      margin:4px 0 0 0;
-      color:var(--muted);
-      font-size:14px;
+
+    .info p {
+      margin-bottom: 6px;
     }
-    .content{
-      padding:24px 28px;
-      display:grid;
-      grid-template-columns:1fr 320px;
-      gap:20px;
+
+    .description {
+      border-top: 1px solid #eee;
+      padding-top: 16px;
+      font-size: 1rem;
+      line-height: 1.8;
+      color: #333;
     }
-    @media (max-width:800px){
-      .content{grid-template-columns:1fr; padding:18px}
-      .hero{padding:18px}
-    }
-    .about{
-      line-height:1.6;
-      color:#111827;
-    }
-    .about h2{
-      margin-top:0;
-      margin-bottom:10px;
-      font-size:18px;
-    }
-    .about p.lead{
-      margin:0 0 14px 0;
-      color:var(--muted);
-    }
-    .bullets{
-      margin:12px 0 0 0;
-      padding-left:18px;
-    }
-    .bullets li{margin:8px 0}
-    .contact{
-      background:linear-gradient(180deg,#fbfdff,#ffffff);
-      border-radius:10px;
-      padding:18px;
-      border:1px solid #eef3fb;
-      height:fit-content;
-    }
-    .contact h3{margin:0 0 12px 0; font-size:16px}
-    .contact .field{font-size:14px; color:var(--muted); margin-bottom:8px}
-    .contact a{
-      color:var(--accent);
-      text-decoration:none;
-      font-weight:600;
-    }
-    .footer{
-      padding:16px 28px;
-      border-top:1px solid #eef2f7;
-      color:var(--muted);
-      font-size:13px;
-      text-align:center;
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      .container {
+        padding: 20px 16px;
+      }
     }
   </style>
 </head>
 <body>
-  <main class="container" role="main" aria-labelledby="page-title">
-    <header class="hero">
-      <div class="logo" aria-hidden="true">DK</div>
-      <div class="headings">
-        <h1 id="page-title">About Us — Đăng Khang Tech</h1>
-        <p>Your partner in building useful mobile experiences</p>
-      </div>
-    </header>
+  <div class="container">
+    <h1>Dang Khang Tech</h1>
+    <div class="subtitle">About Us</div>
 
-    <section class="content">
-      <article class="about" aria-labelledby="about-title">
-        <h2 id="about-title">Who we are</h2>
-        <p class="lead">
-          Đăng Khang Tech is a small but passionate mobile development studio based in Hanoi, Vietnam.
-          We focus on creating high-quality mobile applications that solve real problems and improve daily life.
-        </p>
+    <div class="info">
+      <p><strong>Email:</strong> itbeegroup@gmail.com</p>
+      <p><strong>Address:</strong> Hanoi, Vietnam</p>
+    </div>
 
-        <p>
-          Our team blends practical engineering with user-centered design. We work across the whole product lifecycle:
-          from initial idea and UX, through rapid prototyping, to polished production releases and continuous improvement.
-        </p>
-
-        <ul class="bullets">
-          <li>Mobile app development for Android and iOS (native and cross-platform)</li>
-          <li>Product-first approach: we prioritize user value and simple, delightful experiences</li>
-          <li>Performance-oriented engineering and pragmatic architecture</li>
-          <li>Ongoing maintenance, analytics, and feature iteration</li>
-        </ul>
-
-        <p style="margin-top:14px;">
-          Whether you need a full product team or targeted engineering help, we partner closely with you to deliver solutions
-          that are reliable, maintainable, and loved by users.
-        </p>
-      </article>
-
-      <aside class="contact" aria-labelledby="contact-title">
-        <h3 id="contact-title">Contact</h3>
-        <div class="field"><strong>Company</strong><br/>Đăng Khang Tech</div>
-        <div class="field"><strong>Email</strong><br/>
-          <a href="mailto:itbeegroup@gmail.com">itbeegroup@gmail.com</a>
-        </div>
-        <div class="field"><strong>Address</strong><br/>Hanoi, Vietnam</div>
-
-        <hr style="border:none;border-top:1px solid #f1f5f9;margin:12px 0" />
-
-        <div style="font-size:13px;color:var(--muted)">
-          <strong>Core services</strong>
-          <ul style="margin:8px 0 0 16px;padding:0;color:var(--muted);line-height:1.5">
-            <li>Mobile product development</li>
-            <li>UX-focused design & prototyping</li>
-            <li>App performance & QA</li>
-            <li>Maintenance & analytics</li>
-          </ul>
-        </div>
-      </aside>
-    </section>
-
-    <footer class="footer">
-      © Đăng Khang Tech — Building simple, useful mobile products. Contact: <a href="mailto:itbeegroup@gmail.com">itbeegroup@gmail.com</a>
-    </footer>
-  </main>
+    <div class="description">
+      <p>
+        We are a software development company focused on building high-quality mobile applications. 
+        Our mission is to create digital products that make everyday life easier and more enjoyable. 
+      </p>
+      <p>
+        At Dang Khang Tech, we combine creativity and technology to deliver solutions that empower users 
+        and bring long-term value to our clients.
+      </p>
+    </div>
+  </div>
 </body>
 </html>
